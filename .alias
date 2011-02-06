@@ -1,0 +1,92 @@
+
+#How to add ssh keys to remove host 
+# cat ~/.ssh/id_rsa.pub | ssh root@SERVER-IP 'sh -c "mkdir ~/.ssh;cat - >>~/.ssh/authorized_keys"'
+
+#projects
+alias gh='cd ~/Sites/github.com/miamiphp/'
+alias a='alias'
+alias ea="vim ~/.alias"
+alias ez="vim ~/.zshrc"
+alias zshrc='vim ~/.zshrc'
+alias ehttpd="vim /etc/httpd/conf/httpd.conf"
+alias ephp="vim /etc/php.ini"
+alias ephpcli="vim /etc/php-cli.ini"
+alias emy="vim /etc/my.cnf"
+alias ehosts="sudo vim /etc/hosts"
+alias hosts="sudo vim /etc/hosts"
+alias httpdconf='vim /etc/httpd/conf/httpd.conf'
+alias ra="source ~/.alias"
+alias web="cd /Users/pkruger/Sites/ ; ls"
+alias home="cd ~"
+alias r="rails"
+
+#git stuff 
+alias gb="git branch"
+alias gba="git branch -a"
+alias gc="git commit -v"
+alias gd="git diff | mate"
+alias gl="git pull"
+alias gp="git push"
+alias gst="git status"
+
+#screensave as wallpaper
+alias ss_wall='/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine -background &'
+
+#gource
+alias vgit='git_avatars ; gource . --loop --user-image-dir .git/avatar/'
+alias vgitf='git_avatars ; gource . -f --loop --user-image-dir .git/avatar/'
+
+#view logs
+alias log_crm='ssh crm tail -f /var/log/httpd/crm.directmail.net-access_log'
+alias log_coast='ssh crm tail -f /var/log/httpd/coastmailers.com-access_log'
+
+# logstalgia - awesome visual log viewer
+# http://code.google.com/p/logstalgia/
+alias vlog_crm='ssh crm tail -f /var/log/httpd/crm.directmail.net-access_log | logstalgia --sync - &'
+alias vlog_crmf='ssh crm tail -f /var/log/httpd/crm.directmail.net-access_log | logstalgia -f --sync - &'
+alias vlog_coast='ssh crm tail -f /var/log/httpd/coastmailers.com-access_log | logstalgia --sync - &'
+alias vlog_coastf='ssh crm tail -f /var/log/httpd/coastmailers.com-access_log | logstalgia -f --sync - &'
+
+#alias crmlogs='ssh root@crm.directmail.net tail -f /var/log/httpd/access.log | logstalgia -g "Ad Clicks,/adclick.php,30" -'
+
+#edit aliases
+alias ea="vim ~/.alias"
+
+#edit hosts
+alias hosts="sudo vim /etc/hosts"
+#make sure you always install gems as root user
+alias gem="sudo gem"
+#rails stuff
+alias ss="script/server"
+
+#dns commands
+alias flushdns="dscacheutil -flushcache"
+#fedora
+#alias flushdns="rndc flush"
+
+#projects
+alias crm="vim scp://root@crm.directmail.net//var/www/vhosts/crm.directmail.net/README"
+alias tm="cd /Users/pkruger/Sites/github.com/miamiphp/traxmail/ ; vim README"
+alias tm_server="cd /Users/pkruger/Sites/github.com/miamiphp/traxmail/ ; script/server"
+       
+#directory listings
+alias color=' --color=auto' # use colors
+#ll = long list
+alias ll='ls -Flas'              # long listing, alias       
+
+#list long myfile      # becomes ls -Flas myfile when run
+alias ls='ls -la --color=auto' # use colors
+alias list='ls '      # note the trailing space to trigger chaining!
+alias long='-Flas'    # options to ls for a long listing
+alias la='ls -Fa'          # list all files
+alias ll='ls -Fls'         # long listing format
+       
+alias rm='rm -i'           # prompt before overwrite (but dangerous, see Rm for a better approach)
+alias cp='cp -i'           # prompt before overwrite (same general problem as the rm)
+alias mv='mv -i'           # prompt before overwrite (same general problem as the rm)
+       
+alias vi='vim'             # use improved vi editor
+
+
+
+
