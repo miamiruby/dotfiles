@@ -90,3 +90,15 @@ alias vi='vim'             # use improved vi editor
 
 
 
+alias spotlightoff="sudo mdutil -a -i off"
+alias spotlighton="sudo mdutil -a -i on"
+alias sswallpaper="/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine -background &"
+alias botstart="su pkruger -c \ 'screen -dmS bot -c /var/www/bot.miamiphp.org/bot/.screenrc.bot'"
+
+alias mysqlstop="mysqladmin5 -u root -p shutdown"
+alias speedconfigs="mate /opt/local/apache2/conf/httpd.conf /opt/local/etc/my.cnf /opt/local/apache2/conf/extra/httpd-vhosts.conf /opt/local/etc/php.ini /etc/hosts"
+alias spiderstart="php /var/www/spider/trunk/index.php"
+
+
+
+
